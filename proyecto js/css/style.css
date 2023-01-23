@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap");
+.swiper {
+  width: 100vw;
+  height: 94vh !important; }
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical > .swiper-pagination-bullets {
+  right: 30px !important;
+  background-color: black;
+  border-radius: 30px;
+  padding: 5px; }
+
+.swiper-pagination-bullet {
+  background: #e9ecef !important; }
+
+/* effecto glitch */
+h2 {
+  font-family: "Racing Sans One",sans-serif;
+  margin: 0;
+  font-weight: 600; }
+
+a {
+  color: #ccc; }
+
+section {
+  padding: 20px; }
+
+.hero {
+  font-size: 4rem;
+  line-height: 1;
+  display: inline-block;
+  color: #fff;
+  z-index: 2;
+  letter-spacing: 10px;
+  filter: drop-shadow(0 1px 3px); }
+
+.demo {
+  height: 100px;
+  background: #fff; }
+
+.layers {
+  position: relative; }
+
+.layers::before,
+.layers::after {
+  content: attr(data-text);
+  position: absolute;
+  width: 110%;
+  z-index: -1; }
+
+.layers::before {
+  top: 10px;
+  left: 15px;
+  color: #e0287d; }
+
+.layers::after {
+  top: 5px;
+  left: -10px;
+  color: #1bc7fb; }
+
+.single-path {
+  clip-path: polygon(0% 12%, 53% 12%, 53% 26%, 25% 26%, 25% 86%, 31% 86%, 31% 0%, 53% 0%, 53% 84%, 92% 84%, 92% 82%, 70% 82%, 70% 29%, 78% 29%, 78% 65%, 69% 65%, 69% 66%, 77% 66%, 77% 45%, 85% 45%, 85% 26%, 97% 26%, 97% 28%, 84% 28%, 84% 34%, 54% 34%, 54% 89%, 30% 89%, 30% 58%, 83% 58%, 83% 5%, 68% 5%, 68% 36%, 62% 36%, 62% 1%, 12% 1%, 12% 34%, 60% 34%, 60% 57%, 98% 57%, 98% 83%, 1% 83%, 1% 53%, 91% 53%, 91% 84%, 8% 84%, 8% 83%, 4% 83%); }
+
+.paths {
+  animation: paths 5s step-end infinite; }
+
+@keyframes paths {
+  0% {
+    clip-path: polygon(0% 43%, 83% 43%, 83% 22%, 23% 22%, 23% 24%, 91% 24%, 91% 26%, 18% 26%, 18% 83%, 29% 83%, 29% 17%, 41% 17%, 41% 39%, 18% 39%, 18% 82%, 54% 82%, 54% 88%, 19% 88%, 19% 4%, 39% 4%, 39% 14%, 76% 14%, 76% 52%, 23% 52%, 23% 35%, 19% 35%, 19% 8%, 36% 8%, 36% 31%, 73% 31%, 73% 16%, 1% 16%, 1% 56%, 50% 56%, 50% 8%); }
+  5% {
+    clip-path: polygon(0% 29%, 44% 29%, 44% 83%, 94% 83%, 94% 56%, 11% 56%, 11% 64%, 94% 64%, 94% 70%, 88% 70%, 88% 32%, 18% 32%, 18% 96%, 10% 96%, 10% 62%, 9% 62%, 9% 84%, 68% 84%, 68% 50%, 52% 50%, 52% 55%, 35% 55%, 35% 87%, 25% 87%, 25% 39%, 15% 39%, 15% 88%, 52% 88%); }
+  30% {
+    clip-path: polygon(0% 53%, 93% 53%, 93% 62%, 68% 62%, 68% 37%, 97% 37%, 97% 89%, 13% 89%, 13% 45%, 51% 45%, 51% 88%, 17% 88%, 17% 54%, 81% 54%, 81% 75%, 79% 75%, 79% 76%, 38% 76%, 38% 28%, 61% 28%, 61% 12%, 55% 12%, 55% 62%, 68% 62%, 68% 51%, 0% 51%, 0% 92%, 63% 92%, 63% 4%, 65% 4%); }
+  45% {
+    clip-path: polygon(0% 33%, 2% 33%, 2% 69%, 58% 69%, 58% 94%, 55% 94%, 55% 25%, 33% 25%, 33% 85%, 16% 85%, 16% 19%, 5% 19%, 5% 20%, 79% 20%, 79% 96%, 93% 96%, 93% 50%, 5% 50%, 5% 74%, 55% 74%, 55% 57%, 96% 57%, 96% 59%, 87% 59%, 87% 65%, 82% 65%, 82% 39%, 63% 39%, 63% 92%, 4% 92%, 4% 36%, 24% 36%, 24% 70%, 1% 70%, 1% 43%, 15% 43%, 15% 28%, 23% 28%, 23% 71%, 90% 71%, 90% 86%, 97% 86%, 97% 1%, 60% 1%, 60% 67%, 71% 67%, 71% 91%, 17% 91%, 17% 14%, 39% 14%, 39% 30%, 58% 30%, 58% 11%, 52% 11%, 52% 83%, 68% 83%); }
+  76% {
+    clip-path: polygon(0% 26%, 15% 26%, 15% 73%, 72% 73%, 72% 70%, 77% 70%, 77% 75%, 8% 75%, 8% 42%, 4% 42%, 4% 61%, 17% 61%, 17% 12%, 26% 12%, 26% 63%, 73% 63%, 73% 43%, 90% 43%, 90% 67%, 50% 67%, 50% 41%, 42% 41%, 42% 46%, 50% 46%, 50% 84%, 96% 84%, 96% 78%, 49% 78%, 49% 25%, 63% 25%, 63% 14%); }
+  90% {
+    clip-path: polygon(0% 41%, 13% 41%, 13% 6%, 87% 6%, 87% 93%, 10% 93%, 10% 13%, 89% 13%, 89% 6%, 3% 6%, 3% 8%, 16% 8%, 16% 79%, 0% 79%, 0% 99%, 92% 99%, 92% 90%, 5% 90%, 5% 60%, 0% 60%, 0% 48%, 89% 48%, 89% 13%, 80% 13%, 80% 43%, 95% 43%, 95% 19%, 80% 19%, 80% 85%, 38% 85%, 38% 62%); }
+  1%,
+  7%,
+  33%,
+  47%,
+  78%,
+  93% {
+    clip-path: none; } }
+
+.movement {
+  position: relative;
+  animation: movement 8s step-end infinite; }
+
+@keyframes movement {
+  0% {
+    top: 0px;
+    left: -20px; }
+  15% {
+    top: 10px;
+    left: 10px; }
+  60% {
+    top: 5px;
+    left: -10px; }
+  75% {
+    top: -5px;
+    left: 20px; }
+  100% {
+    top: 10px;
+    left: 5px; } }
+
+.opacity {
+  animation: opacity 5s step-end infinite; }
+
+@keyframes opacity {
+  0% {
+    opacity: 0.1; }
+  5% {
+    opacity: 0.7; }
+  30% {
+    opacity: 0.4; }
+  45% {
+    opacity: 0.6; }
+  76% {
+    opacity: 0.4; }
+  90% {
+    opacity: 0.8; }
+  1%,
+  7%,
+  33%,
+  47%,
+  78%,
+  93% {
+    opacity: 0; } }
+
+.font {
+  animation: font 7s step-end infinite; }
+
+@keyframes font {
+  0% {
+    font-weight: 100;
+    color: #e0287d;
+    filter: blur(3px); }
+  20% {
+    font-weight: 500;
+    color: #fff;
+    filter: blur(0); }
+  50% {
+    font-weight: 300;
+    color: #1bc7fb;
+    filter: blur(2px); }
+  60% {
+    font-weight: 700;
+    color: #fff;
+    filter: blur(0); }
+  90% {
+    font-weight: 500;
+    color: #e0287d;
+    filter: blur(6px); } }
+
+.glitch span {
+  animation: paths 5s step-end infinite; }
+
+.glitch::before {
+  animation: paths 5s step-end infinite, opacity 5s step-end infinite, font 8s step-end infinite, movement 10s step-end infinite; }
+
+.glitch::after {
+  animation: paths 5s step-end infinite, opacity 5s step-end infinite, font 7s step-end infinite, movement 8s step-end infinite; }
+
+.hero-container {
+  position: relative;
+  text-align: center; }
+
+/* formulario */
+.form-control {
+  display: block !important;
+  width: 100% !important;
+  padding: 0.375rem 0.75rem !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+  color: #ffffff !important;
+  background-color: #000 !important;
+  background-clip: padding-box !important;
+  border: 1px solid #a117f2 !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  border-radius: 0.25rem !important;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important; }
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+  background-color: black !important;
+  color: white; }
+
+.texto-form, .texto-form-2 {
+  color: white; }
+
+.enviar {
+  font-family: "Nunito", sans-serif !important;
+  background-color: none !important;
+  border: 1px solid #a117f2 !important;
+  color: white !important;
+  padding: 16px 32px !important;
+  text-decoration: none !important;
+  margin: 4px 2px !important;
+  cursor: pointer !important;
+  width: 100% !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important; }
+
+.enviar:hover {
+  background-color: #a117f2 !important;
+  color: black !important;
+  transition: 800ms !important; }
+
+#stfy:hover {
+  color: #1db954 !important;
+  transition: 500ms; }
+
+.yt:hover {
+  color: #FF0000 !important;
+  transition: 500ms; }
+
+.ln:hover {
+  color: #0072b1 !important;
+  transition: 500ms; }
+
+.rs-ico:hover {
+  filter: brightness(0);
+  transition: 500ms; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.ligth-mode {
+  background-color: white; }
+  .ligth-mode #objeto {
+    color: black; }
+
+.dark-mode {
+  background-color: black; }
+  .dark-mode #objeto {
+    color: white !important; }
+  .dark-mode .luz {
+    color: yellow !important; }
+  .dark-mode .luztxt {
+    color: white; }
+
+body {
+  height: 100%;
+  width: 100vw;
+  overflow-x: hidden; }
+
+@keyframes animacion-fondo {
+  0% {
+    background-color: #2c295b; }
+  25% {
+    background-color: #c12057; }
+  50% {
+    background-color: #192d6c; }
+  75% {
+    background-color: #a117f2; }
+  100% {
+    background-color: #510094; } }
+
+header {
+  -webkit-animation: animacion-fondo 10s ease infinite;
+  animation: animacion-fondo 10s ease infinite; }
+
+nav h4 {
+  color: white;
+  font-family: 'Abel', sans-serif;
+  font-family: "Racing Sans One",sans-serif; }
+
+#contendorpagos {
+  margin-top: 4%;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 5px; }
+
+@keyframes animacion-lineal {
+  0% {
+    transform: translate(0vw, 0);
+    opacity: 0; }
+  10% {
+    transform: translate(10vw, 0);
+    opacity: 1; }
+  90% {
+    transform: translate(90vw, 0);
+    opacity: 0.9; }
+  100% {
+    transform: translate(100vw, 0);
+    opacity: 0; } }
+
+#objetoMovil {
+  margin-top: 4%; }
+
+#objeto {
+  font-family: "Racing Sans One",sans-serif;
+  font-size: 30px;
+  -webkit-animation: animacion-lineal 10s linear infinite;
+  animation: animacion-lineal 10s linear infinite; }
+
+.luz {
+  cursor: pointer; }
+
+.luztxt, .luz {
+  font-size: 1em;
+  text-align: center; }
+
+#carrito {
+  margin-right: 50px; }
+
+.contenedor, .contenedorOferta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100% !important;
+  height: 100%;
+  margin-top: 3%; }
+
+.card {
+  object-fit: contain;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #2c295b 0%, #c12057 35%, #0070ff 100%);
+  margin: .5em;
+  transition: 800ms; }
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: rgba(185, 184, 184, 0.432) 0px 1px 1px 0px inset, rgba(86, 86, 177, 0.466) 0px 80px 100px -6px, rgba(225, 0, 255, 0.596) 0px 0px 70px 10px; }
+
+#flechabajar {
+  animation: shakeY infinite;
+  animation-duration: 10s; }
+
+footer {
+  height: 20vh;
+  width: 100vw; }
+
+.cart-card {
+  font-size: 1.75rem;
+  font-weight: bold;
+  height: 200px;
+  width: 100%;
+  background-color: #a117f2;
+  margin-top: 20px; }
+  .cart-card span, .cart-card i, .cart-card h3 {
+    padding: 12px; }
+  .cart-card .cart-img {
+    width: 200px;
+    background-color: #c12057; }
+    .cart-card .cart-img img {
+      width: 100%;
+      object-fit: contain; }
+
+.cart-list {
+  width: 100%; }
+  .cart-list ul {
+    margin-top: 10%;
+    list-style: none; }
+    .cart-list ul li {
+      margin-top: 10%;
+      padding: 15px; }
